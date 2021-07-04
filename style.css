@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "@Microsoft YaHei Light", serif;
+}
+
+section {
+  height: 100vh;
+  line-height: 38px;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+p {
+  margin: 24px 0;
+}
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  appearance: none;
+  background: hsl(217, 51%, 25%);
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(230, 51%, 15%);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #2b2631;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  opacity: 0.8;
+}
+
+.navbar a {
+  color: #e7e7e7;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .brand {
+  display: block;
+  font-size: 28px;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 24px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  background-color: rgb(35, 31, 40);
+}
+
+.nav-social {
+  padding: 0 18px;
+}
+.nav-social a {
+  /* display: block; */
+  font-size: 20px;
+  padding: 0 18px;
+  transition: opacity 0.2s;
+}
+.nav-social a:hover {
+  opacity: 0.7;
+}
+
+.section-home {
+  background-image: url(img/section1.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.text {
+  font-size: 24px;
+  text-shadow: 2px 2px 8px grey;
+  text-align: center;
+  max-width: 600px;
+}
+
+.text-center {
+  position: relative;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-title {
+  font-size: 40px;
+}
+
+.btn {
+  outline: none;
+  background: none;
+  border: 2px solid #e7e7e7;
+  color: #e7e7e7;
+  padding: 8px 16px;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: rgb(255, 255, 255, 0.2);
+}
+
+.section-mission {
+  background-image: url(img/section2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-about {
+  overflow: hidden;
+  position: relative;
+}
+.section-about .video-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
