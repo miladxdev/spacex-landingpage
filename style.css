@@ -74,7 +74,7 @@ button {
 
 .navbar ul li a:hover,
 .navbar ul li a:focus {
-  background-color: hsl(240, 10%, 3%);
+  background-color: hsl(240, 10%, 20%);
 }
 
 .navbar .social a {
@@ -93,6 +93,7 @@ button {
   height: 70px;
   font-size: 18px;
   background-color: hsl(239, 66%, 58%);
+  background-color: #004573;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -109,7 +110,7 @@ button {
   text-shadow: 2px 2px 8px grey;
   text-align: left;
   max-width: 600px;
-  padding: 4px 8px;
+  padding: 4px 16px;
 }
 
 .text-center {
@@ -148,7 +149,6 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 50%;
-  /* text-align: left; */
 }
 
 .section-mission {
@@ -197,4 +197,12 @@ button {
   .navbar #toggle {
     display: flex;
   }
+  .text-title {
+    font-size: 28px;
+  }
 }
+
+/* 
+  instagram: web.script
+  copyright © 2021 milad gharibi
+ */

@@ -10,7 +10,7 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-//toggle menu
+// toggle menu
 function toggleMenu() {
   var x = document.getElementById("navbar");
   if (x.className === "navbar") {
