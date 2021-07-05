@@ -11,7 +11,6 @@ body {
 
 section {
   height: 100vh;
-  line-height: 38px;
 }
 a {
   text-decoration: none;
@@ -29,23 +28,27 @@ button {
 
 ::-webkit-scrollbar {
   appearance: none;
-  background: hsl(217, 51%, 25%);
+  background: hsl(235, 11%, 20%);
   width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(230, 51%, 15%);
+  background: hsl(235, 11%, 70%);
 }
 
 .navbar {
   position: fixed;
+  top: 0;
   width: 100%;
-  background-color: #2b2631;
+  height: 70px;
+  /* background-color: hsl(267, 13%, 15%); */
+  background-color: rgb(14, 14, 17);
   display: flex;
   justify-content: space-around;
   align-items: center;
   z-index: 100;
-  opacity: 0.8;
+  opacity: 0.9;
+  transition: top 0.3s;
 }
 
 .navbar a {
@@ -59,43 +62,54 @@ button {
 
 .navbar .brand {
   display: block;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .navbar ul li a {
   display: block;
   padding: 24px;
+  background-color: rgb(14, 14, 17);
+  transition: background 0.2s;
 }
 
 .navbar ul li a:hover,
 .navbar ul li a:focus {
-  background-color: rgb(35, 31, 40);
+  background-color: hsl(240, 10%, 3%);
 }
 
-.nav-social {
-  padding: 0 18px;
-}
-.nav-social a {
+.navbar .social a {
   /* display: block; */
   font-size: 20px;
   padding: 0 18px;
   transition: opacity 0.2s;
 }
-.nav-social a:hover {
+.navbar .social a:hover {
   opacity: 0.7;
 }
 
-.section-home {
-  background-image: url(img/section1.jpg);
-  background-size: auto;
-  background-repeat: no-repeat;
+.navbar #toggle {
+  display: none;
+  width: 70px;
+  height: 70px;
+  font-size: 18px;
+  background-color: hsl(239, 66%, 58%);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: background 0.2s;
+}
+.navbar #toggle:hover {
+  background-color: hsl(240, 10%, 3%);
 }
 
 .text {
   font-size: 24px;
   text-shadow: 2px 2px 8px grey;
-  text-align: center;
+  text-align: left;
   max-width: 600px;
+  padding: 4px 8px;
 }
 
 .text-center {
@@ -105,6 +119,12 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.text-left {
+  position: relative;
+  top: 54%;
+  left: 10%;
+  transform: translate(0%, -50%);
+}
 .text-title {
   font-size: 40px;
 }
@@ -121,6 +141,14 @@ button {
 }
 .btn:hover {
   background: rgb(255, 255, 255, 0.2);
+}
+
+.section-home {
+  background-image: url(img/section1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+  /* text-align: left; */
 }
 
 .section-mission {
@@ -141,4 +169,32 @@ button {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: block;
+  }
+  .navbar .brand {
+    text-align: center;
+    padding: 16px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .navbar.navbar-phone ul {
+    display: block;
+  }
+
+  .navbar .social {
+    display: none;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .navbar #toggle {
+    display: flex;
+  }
 }
