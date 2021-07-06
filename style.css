@@ -197,7 +197,12 @@ footer {
     display: block;
   }
   .navbar .brand {
+<<<<<<< HEAD
     height: 100%;
+=======
+    text-align: center;
+    padding: 14px;
+>>>>>>> 8a1b1a60b53bb18ec4c142ac0c934d0db37613ad
   }
 
   .navbar ul {
