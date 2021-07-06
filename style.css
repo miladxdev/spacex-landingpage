@@ -64,7 +64,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  height: 70px;
 }
 
 .navbar ul li a {
@@ -174,9 +174,9 @@ button {
 }
 
 footer {
-  padding: 40px;
+  padding: 18px;
   display: flex;
-  background: #121212;
+  background: #0e0e0e;
   color: white;
   justify-content: space-around;
   align-items: center;
@@ -185,7 +185,7 @@ footer {
 .footer-social a {
   color: white;
   font-size: 28px;
-  padding: 18px;
+  padding: 14px;
   transition: opacity 0.2s;
 }
 .footer-social a:hover {
@@ -197,12 +197,7 @@ footer {
     display: block;
   }
   .navbar .brand {
-<<<<<<< HEAD
-    height: 100%;
-=======
-    text-align: center;
-    padding: 14px;
->>>>>>> 8a1b1a60b53bb18ec4c142ac0c934d0db37613ad
+    height: 70px;
   }
 
   .navbar ul {
@@ -222,8 +217,12 @@ footer {
     display: flex;
   }
 
+  p {
+    line-height: 1.5rem;
+  }
   .text {
     font-size: 14px;
+    padding: 24px;
   }
   .text-title {
     font-size: 24px;
